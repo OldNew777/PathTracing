@@ -82,36 +82,25 @@ PT算法：
 
 物体的漫反射系数$diffusionRate$、镜面反射系数$specularRate$、折射系数$refractRate$满足：
 
-$$
-diffusionRate + specularRate + refractRate = 1
-$$
+<img src="\pictures\formula1.png" alt="formula1" style="zoom:85%;" />
+
 对于某一条相机视线ray来说，撞击到物体也相应地将后续光线分为3部分：
 
 （1）   漫反射，在ray撞击物体点的法向半球（即上表面）随机选择一个方向反射
 
 （2）   镜面反射，根据公式：
 
-$$
-ReflectDir = Lx – (2 * Lx·N)*N
-$$
+<img src="./pictures/formula2.png" alt="formula2" style="zoom:80%;" />
+
 计算出反射光线的方向
 
 （3）   透射，根据折射定律计算出折射方向
 
-$$
-\frac {sin \theta_1} {sin \theta_2} = \frac {n_2} {n_1}
-$$
+<img src="\pictures\formula3.png" alt="formula3" style="zoom:80%;" />
+
 其中，若同时具有镜面反射与折射，则采用轮盘赌的形式决定反射与折射的选择
 
-$$
-\begin{aligned}
-finalColor \ += \ & diffusionRate * objectColor * computePathTracing(diffuseDirection) + \\
-
-			& specularRate * objectColor * computePathTracing(reflectDirection) + \\
-
-			& refractRate* objectColor * computePathTracing(refractDirection)
-\end{aligned}
-$$
+<img src="./pictures/formula4.png" alt="formula4" style="zoom:80%;" />
 
 
 主要实现在PathTracing.h和PathTracing.cpp中，也包括其余的各类object求交函数intersect等
@@ -164,27 +153,16 @@ $$
 
 球的uv坐标计算为：
 
-$$
-\begin{aligned}
-\phi &= atan2(z,x) \\
-\theta &= asin(y) \\
-u &= 1- \frac {\phi + \pi} {2\pi} \\
-v &= \frac {\theta + \pi / 2}{\pi}
-\end{aligned}
-$$
+<img src="./pictures/formula5.png" alt="formula5" style="zoom:80%;" />
+
 见sphere.hpp的getTextureColor函数，line72-79
 
  
 
 Bezier曲面的贴图uv坐标计算为：
 
-$$
-\begin{aligned}
-u &= \frac {\theta}{2\pi} \\
-v &= u_{bezier}
-\end{aligned}
-$$
- 
+<img src="./pictures/formula6.png" alt="formula6" style="zoom:85%;" />
+
 
 贴图的图片与解释详见上文
 
@@ -206,54 +184,19 @@ $$
 
 若记xy平面内的2Dbezier参数曲线坐标与射线点坐标分别为：
 
-$$
-P(u) = 	
-\begin{bmatrix}
-P_x(u) \\
-P_y(u) \\
-0
-\end{bmatrix}
-$$
-
-$$
-L(t)=rayOrigin+t*rayDirection =
-\begin{bmatrix}
-rayO_x + t*rayD_x \\
-rayO_y + t*rayD_y \\
-rayO_z + t*rayD_z \\
-\end{bmatrix}
-$$
+<img src="./pictures/formula7.png" alt="formula7" style="zoom:80%;" />
 
 绕z轴旋转$\theta$角，则曲线旋转后的点坐标为：
 
-$$
-S(u,\theta) = 	
-\begin{bmatrix}
-P_x(u)cos\theta \\
-P_y(u) \\
--P_x(u)sin\theta
-\end{bmatrix}
-$$
-记函数：
-$$
-F(t,u,\theta) = L(t) - S(u,\theta)
-$$
-则：
-$$
-\frac {\partial F(t,u,\theta)} {\partial (t,u,\theta)} = 	
-\begin{bmatrix}
-rayD_x 	& -P'_x(u)cos\theta 	& P_x(u)sin\theta \\
-rayD_y 	& -P'_y(u) 				& 0 \\
-rayD_z 	& P_x(u)sin\theta 		& P_x(u)cos\theta \\
-\end{bmatrix}
-$$
+<img src="./pictures/formula8.png" alt="formula8" style="zoom:80%;" />
 
-$$
-x(t,u,\theta) = 
-x(t,u,\theta) - 
-{\frac {\partial F(t,u,\theta)} {\partial (t,u,\theta)}}^{-1} *
-F(t,u,\theta)
-$$
+记函数：
+
+<img src="./pictures/formula9.png" alt="formula9" style="zoom:80%;" />
+
+则：
+
+<img src="./pictures/formula10.png" alt="formula10" style="zoom:80%;" />
 
 最终效果如下（采样率很低的单物体图片，仅作对比使用）：
 
