@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="vecmath">
+      <UniqueIdentifier>{e9f5ccee-e314-4505-b270-561d04b66ae4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="vecmath\float">
+      <UniqueIdentifier>{60480f74-e4fb-4792-a886-71c2e5e986b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vecmath\double">
+      <UniqueIdentifier>{f235d776-b5be-44c3-a372-00ddb10525f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vecmath\double\include">
+      <UniqueIdentifier>{200cffdc-6ee4-4178-8518-f86792198ff2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vecmath\double\src">
+      <UniqueIdentifier>{cd80d19a-9681-4067-9451-ed2e97d5dc2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vecmath\float\src">
+      <UniqueIdentifier>{ac693712-330b-48f7-a81b-d2355de3ad3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vecmath\float\include">
+      <UniqueIdentifier>{412201c1-9455-46e1-9306-495ff848bc5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="object">
+      <UniqueIdentifier>{342f6415-e523-4789-b4be-d64d5fbd2b6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="object\src">
+      <UniqueIdentifier>{7021f26f-44b9-4897-8e05-00c950650608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="object\include">
+      <UniqueIdentifier>{17345795-5007-41d2-9a61-859c15340691}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\camera.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hit.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\image.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\light.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\material.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ray.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\scene_parser.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PathTracing.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\vecmath\include\Vector2f.h">
+      <Filter>vecmath\float\include</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\vecmath\include\Matrix2f.h">
+      <Filter>vecmath\float\include</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\vecmath\include\Matrix3f.h">
+      <Filter>vecmath\float\include</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\vecmath\include\Matrix4f.h">
+      <Filter>vecmath\float\include</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\vecmath\include\Quat4f.h">
+      <Filter>vecmath\float\include</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\vecmath\include\Vector4f.h">
+      <Filter>vecmath\float\include</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\vecmath\include\Vector3f.h">
+      <Filter>vecmath\float\include</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\vecmath\include\Matrix3d.h">
+      <Filter>vecmath\double\include</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\vecmath\include\Matrix2d.h">
+      <Filter>vecmath\double\include</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\vecmath\include\Vector2d.h">
+      <Filter>vecmath\double\include</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\vecmath\include\Vector3d.h">
+      <Filter>vecmath\double\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\function.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\basicStruct.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\triangle.hpp">
+      <Filter>object\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\curve.hpp">
+      <Filter>object\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\group.hpp">
+      <Filter>object\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mesh.hpp">
+      <Filter>object\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\object3d.hpp">
+      <Filter>object\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\plane.hpp">
+      <Filter>object\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\revsurface.hpp">
+      <Filter>object\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sphere.hpp">
+      <Filter>object\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\transform.hpp">
+      <Filter>object\include</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\vecmath\include\Vector4d.h">
+      <Filter>vecmath\double\include</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\vecmath\include\Matrix4d.h">
+      <Filter>vecmath\double\include</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\vecmath\include\Quat4d.h">
+      <Filter>vecmath\double\include</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\vecmath\include\vecmath.h">
+      <Filter>vecmath</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\image.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene_parser.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PathTracing.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\vecmath\src\Vector2f.cpp">
+      <Filter>vecmath\float\src</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\vecmath\src\Vector3f.cpp">
+      <Filter>vecmath\float\src</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\vecmath\src\Matrix2f.cpp">
+      <Filter>vecmath\float\src</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\vecmath\src\Matrix3f.cpp">
+      <Filter>vecmath\float\src</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\vecmath\src\Matrix4f.cpp">
+      <Filter>vecmath\float\src</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\vecmath\src\Quat4f.cpp">
+      <Filter>vecmath\float\src</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\vecmath\src\Vector4f.cpp">
+      <Filter>vecmath\float\src</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\vecmath\src\Matrix3d.cpp">
+      <Filter>vecmath\double\src</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\vecmath\src\Matrix2d.cpp">
+      <Filter>vecmath\double\src</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\vecmath\src\Vector2d.cpp">
+      <Filter>vecmath\double\src</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\vecmath\src\Vector3d.cpp">
+      <Filter>vecmath\double\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mesh.cpp">
+      <Filter>object\src</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\vecmath\src\Matrix4d.cpp">
+      <Filter>vecmath\double\src</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\vecmath\src\Quat4d.cpp">
+      <Filter>vecmath\double\src</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\vecmath\src\Vector4d.cpp">
+      <Filter>vecmath\double\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

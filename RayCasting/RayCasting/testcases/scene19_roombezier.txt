@@ -1,0 +1,134 @@
+PerspectiveCamera {
+	center 50 50 295.6
+	direction 0 -0.042612 -1
+	up 0 1 0
+	width 3072
+	height 2304
+	canvasDistance 130
+	focusDistance 230
+	interfereRatio 0
+}
+
+Background {
+	color 0 0 0
+}
+
+Materials {
+	numMaterials 9
+	
+	Material { 
+		objectColor 0.75 0.25 0.25
+	}
+	
+	Material { 
+		objectColor 0.25 0.25 0.75
+	}
+	
+	Material { 
+		objectColor 0.75 0.75 0.75
+	}
+	
+	Material { 
+		objectColor 0 0 0
+	}
+	
+	Material { 
+		objectColor 0.999 0.999 0.999
+		specularRate 1
+	}
+	
+	Material { 
+		objectColor 0.999 0.999 0.999
+		refractRate 1
+	}
+	
+	Material { 
+		objectColor 0 0 0
+		emissionColor 12 12 12
+	}
+	
+	Material { 
+		texture picture/star.tga
+	}
+	
+	Material {
+		texture picture/qinghuaci1.tga
+	}
+}
+
+Group {
+	numObjects 11
+	
+	MaterialIndex 0
+	Plane {
+		normal 1 0 0
+		offset 0
+	}
+	
+	MaterialIndex 1
+	Plane {
+		normal 1 0 0
+		offset 99
+	}
+	
+	MaterialIndex 4
+	Plane {
+		normal 0 0 1
+		offset 0
+	}
+	
+	MaterialIndex 7
+	Plane {
+		normal 0 0 1
+		offset 170
+	}
+	
+	MaterialIndex 2
+	Plane {
+		normal 0 1 0
+		offset 0
+	}
+	Plane {
+		normal 0 1 0
+		offset 81.6
+	}
+	
+	MaterialIndex 4
+	Sphere {
+		center 40 16.5 47
+		radius 16.5 
+	}
+	
+	MaterialIndex 5
+	Sphere {
+		center 73 16.5 78
+		radius 16.5 
+	}
+	
+	MaterialIndex 6
+	Sphere {
+		center 50 681.33 81.6
+		radius 600
+	}
+	
+	MaterialIndex 7
+	Sphere {
+		center 20 16.5 100
+		radius 16.5 
+	}
+	
+	MaterialIndex 8
+	Transform {
+		UniformScale 6
+		Translate  9 2 18
+		RevSurface {
+			profile BezierCurve {
+				controls
+ 				[ -2 2 0 ]
+				[ -4 0 0 ]
+				[ 0 0 0 ]
+				[ -2 -2 0 ]
+			}
+		}
+	}
+}
