@@ -133,14 +133,14 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>E:\OldNew\2ndYear2\BasicGraphics\EXAM\RayCasting\RayCasting\include;E:\OldNew\2ndYear2\BasicGraphics\EXAM\RayCasting\RayCasting\deps\vecmath\include;$(IncludePath)</IncludePath>
+    <IncludePath>.\include;.\deps\vecmath\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>E:\OldNew\2ndYear2\BasicGraphics\EXAM\RayCasting\RayCasting\deps\vecmath\include;E:\OldNew\2ndYear2\BasicGraphics\EXAM\RayCasting\RayCasting\include;$(IncludePath)</IncludePath>
+    <IncludePath>.\deps\vecmath\include;.\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

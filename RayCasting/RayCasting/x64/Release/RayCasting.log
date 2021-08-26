@@ -1,17 +1,62 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(467,5): warning MSB8028: 中间目录(x64\Release\)包含从另一个项目(RayCasting.vcxproj, RayTracing.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: 中间目录(x64\Release\)包含从另一个项目(RayCasting.vcxproj, RayTracing.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  Matrix2d.cpp
+  Matrix2f.cpp
+  Matrix3d.cpp
+  Matrix3f.cpp
+  Matrix4d.cpp
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\deps\vecmath\src\Matrix4d.cpp(620,35): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  Matrix4f.cpp
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\deps\vecmath\src\Matrix4f.cpp(620,35): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  Quat4d.cpp
+  Quat4f.cpp
+  Vector2d.cpp
+  Vector2f.cpp
+  Vector3d.cpp
+  Vector3f.cpp
+  Vector4d.cpp
+  Vector4f.cpp
+  image.cpp
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\src\image.cpp(14,77): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\src\image.cpp(21,78): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\src\image.cpp(297,28): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  main.cpp
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\material.hpp(42,15): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\material.hpp(43,15): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\material.hpp(65,59): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\material.hpp(65,43): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\src\main.cpp(25,15): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\src\main.cpp(55,19): warning C4244: “初始化”: 从“time_t”转换到“int”，可能丢失数据
+  mesh.cpp
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\material.hpp(42,15): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\material.hpp(43,15): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\material.hpp(65,59): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\material.hpp(65,43): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\plane.hpp(4,1): warning C4005: “epsilon”: 宏重定义
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\triangle.hpp(4): message : 参见“epsilon”的前一个定义
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\src\mesh.cpp(269,59): warning C4267: “=”: 从“size_t”转换到“_Ty”，可能丢失数据
+          with
+          [
+              _Ty=int
+          ]
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\src\mesh.cpp(296,36): warning C4244: “参数”: 从“unsigned __int64”转换到“double”，可能丢失数据
+  PathTracing.cpp
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\material.hpp(42,15): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\material.hpp(43,15): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\material.hpp(65,59): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\material.hpp(65,43): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
   scene_parser.cpp
-E:\OldNew\2ndYear2\BasicGraphics\EXAM\RayCasting\RayCasting\include\material.hpp(42,15): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-E:\OldNew\2ndYear2\BasicGraphics\EXAM\RayCasting\RayCasting\include\material.hpp(43,15): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-E:\OldNew\2ndYear2\BasicGraphics\EXAM\RayCasting\RayCasting\include\material.hpp(65,59): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-E:\OldNew\2ndYear2\BasicGraphics\EXAM\RayCasting\RayCasting\include\material.hpp(65,43): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-E:\OldNew\2ndYear2\BasicGraphics\EXAM\RayCasting\RayCasting\include\triangle.hpp(4,1): warning C4005: “epsilon”: 宏重定义
-E:\OldNew\2ndYear2\BasicGraphics\EXAM\RayCasting\RayCasting\include\camera.hpp(11): message : 参见“epsilon”的前一个定义
-E:\OldNew\2ndYear2\BasicGraphics\EXAM\RayCasting\RayCasting\include\plane.hpp(4,1): warning C4005: “epsilon”: 宏重定义
-E:\OldNew\2ndYear2\BasicGraphics\EXAM\RayCasting\RayCasting\include\triangle.hpp(4): message : 参见“epsilon”的前一个定义
-E:\OldNew\2ndYear2\BasicGraphics\EXAM\RayCasting\RayCasting\include\curve.hpp(125,32): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\material.hpp(42,15): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\material.hpp(43,15): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\material.hpp(65,59): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\material.hpp(65,43): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\triangle.hpp(4,1): warning C4005: “epsilon”: 宏重定义
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\camera.hpp(11): message : 参见“epsilon”的前一个定义
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\plane.hpp(4,1): warning C4005: “epsilon”: 宏重定义
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\triangle.hpp(4): message : 参见“epsilon”的前一个定义
+G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\RayCasting\include\curve.hpp(125,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
   正在生成代码
-  3 of 811 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    7 functions had inline decision re-evaluated but remain unchanged
+  810 of 811 functions (99.9%) were compiled, the rest were copied from previous compilation.
+    21 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
   已完成代码的生成
-  RayCasting.vcxproj -> E:\OldNew\2ndYear2\BasicGraphics\EXAM\RayCasting\x64\Release\PathTracing.exe
+  RayCasting.vcxproj -> G:\OldNew\code\BasicGraphics\PathTracing\RayCasting\x64\Release\PathTracing.exe

@@ -4,7 +4,7 @@
 #define epsilon 1e-5
 
 #include "object3d.hpp"
-#include <vecmath.h>
+#include "vecmath.h"
 #include <cmath>
 #include <iostream>
 
@@ -12,13 +12,13 @@ using namespace std;
 
 class mesh;
 
-class Triangle: public Object3D {
+class Triangle : public Object3D {
 
 public:
 	friend class mesh;
 	Triangle() {}
 
-    // a b c are three vertex positions of the triangle
+	// a b c are three vertex positions of the triangle
 	Triangle(const Vector3d& a, const Vector3d& b, const Vector3d& c, Material* m) : Object3D(m) {
 		vertices[0] = a;
 		vertices[1] = b;
@@ -28,14 +28,14 @@ public:
 		normal = Vector3d::cross(a - b, a - c).normalized();
 	}
 
-	Triangle(const Triangle &t) {
+	Triangle(const Triangle& t) {
 		vertices[0] = t.vertices[0];
 		vertices[1] = t.vertices[1];
 		vertices[2] = t.vertices[2];
 		normal = t.normal;
 	}
 
-	bool intersect( const Ray& ray,  Hit& hit , double tmin) override {
+	bool intersect(const Ray& ray, Hit& hit, double tmin) override {
 		//use the way in PPT, calculate directly
 		Vector3d Rd(ray.getDirection()),
 			E1(vertices[0] - vertices[1]),
